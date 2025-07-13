@@ -1,104 +1,76 @@
-# Simulador de Rutina Diaria
+# 💪 Simulador de Rutinas de Ejercicio (TP Final)
 
-**Entregable2\_Zuliani**
-
-Proyecto de curso que genera una rutina de ejercicios diaria personalizada según datos físicos y preferencias de actividad, usando HTML, CSS (Dark Mode) y JavaScript (DOM, eventos, localStorage).
+Este proyecto es una evolución del TP2 original. Se trata de un simulador web que genera rutinas de ejercicio personalizadas en base a los datos ingresados por el usuario (peso, altura, edad y tipo de actividad física). El sistema permite visualizar las rutinas generadas, marcarlas como realizadas y mantener un historial editable.
 
 ---
 
-## Estructura de Carpetas
+## 🆕 Cambios realizados desde el TP2
 
-```
-/ (raíz)
-│
-├── index.html           # Página principal
+El proyecto fue completamente rediseñado y optimizado. A continuación se listan las principales mejoras incorporadas:
+
+### 🧠 Funcionalidad
+- ✅ **Lógica de generación variada de rutinas:** ahora las rutinas generadas no se repiten, evitando ejercicios ya vistos recientemente.
+- ✅ **Compatibilidad con 6 tipos de actividades físicas:** `calistenia`, `spinning`, `levantamiento de pesas`, `hiit`, `yoga` y `running`.
+- ✅ **Soporte ampliado en el JSON de rutinas:** más de 50 ejercicios con descripciones detalladas de cómo realizarlos.
+- ✅ **Historial persistente:** las rutinas se guardan en `localStorage` y se pueden revisar posteriormente.
+- ✅ **Posibilidad de eliminar rutinas del historial individualmente** con checkbox.
+- ✅ **Confirmación visual de acciones importantes** usando `SweetAlert2`.
+- ✅ **Modo oscuro persistente** a través de `localStorage`.
+
+### 🎨 Estética y UX
+- ✅ **Interfaz visualmente mejorada:** se aplicó un diseño moderno, coherente, limpio y responsive.
+- ✅ **Checkbox estético y alineado a la derecha** para rutinas activas e historial.
+- ✅ **Botón de eliminación de historial reubicado y funcional.**
+- ✅ **Mensajes contextuales más amigables.**
+
+---
+
+## 🚀 ¿Cómo usar?
+
+1. Cloná el repositorio o descargá el `.zip`.
+2. Abrí el archivo `index.html` en tu navegador.
+3. Ingresá tus datos y seleccioná el tipo de actividad física.
+4. Presioná “Generar Rutina”.
+5. (Opcional) Activá el modo oscuro 🌙 o claro ☀️.
+6. Revisá tu historial y eliminá rutinas anteriores si lo necesitás.
+
+---
+
+## 📁 Estructura del proyecto
+
+📦 EntregaFinalJS
+├── index.html → Página principal
 ├── css/
-│   └── styles.css       # Estilos Dark Mode y diseño
+│ └── styles.css → Estilos modernos (modo claro y oscuro)
 ├── js/
-    └── script.js        # Lógica de generación e inyección de rutina
-
-```
-
-## Tecnologías
-
-* **HTML5**: Formulario y estructura de la interfaz.
-* **CSS3**: Dark Mode, variables CSS, flexbox.
-* **JavaScript**:
-
-  * Captura de eventos (`submit`).
-  * Manipulación del DOM para inyectar ejercicios.
-  * LocalStorage para guardar datos del usuario.
-  * Lógica de generación de rutina con ajustes según edad y peso.
+│ └── app.js → Lógica del simulador y manejo de eventos
+├── assets/
+│ └── rutinas.json → Base de datos de ejercicios
+└── README.md → Este archivo
 
 ---
 
-## Instalación y Uso
+## 🛠️ Tecnologías utilizadas
 
-1. Clonar o descargar el repositorio y descomprimir el ZIP:
-
-   ```bash
-   git clone https://tu-repo-url.git
-   cd Entregable2_Zuliani
-   ```
-2. Abrir `index.html` en tu navegador.
-3. Completar los campos:
-
-   * Peso (kg)
-   * Altura (cm)
-   * Edad (años)
-   * Tipo de actividad (calistenia, spinning, etc.)
-4. Hacer clic en **Generar Rutina**.
-5. Visualizar rutina personalizada en pantalla.
+- HTML5 + CSS3 (modo dark y diseño responsive)
+- JavaScript (ES6+)
+- `localStorage` para persistencia local
+- [`SweetAlert2`](https://sweetalert2.github.io/) para alertas estilizadas
 
 ---
 
-## Personalización de la Rutina
+## 💡 Mejoras posibles a futuro
 
-La función `generarRutina(datos)` en `script.js`:
-
-* Selecciona N ejercicios según la edad:
-
-  * < 30 años → 6 ejercicios
-  * 30–49 → 5 ejercicios
-  * 50–64 → 4 ejercicios
-  * ≥ 65 → 3 ejercicios
-* Ajusta series, repeticiones o tiempo con factores `edad` y `peso`.
-* Determina si un ejercicio es de **reps** o **time** vía `metaEjercicios`.
-
-Modifica estos valores en `metaEjercicios` y `ejerciciosPorActividad` para añadir ejercicios o cambiar parámetros.
+- Registro de usuario y autenticación
+- Exportar rutina como PDF o imprimir
+- Integración con APIs de salud o fitness
+- Calorías estimadas por rutina
 
 ---
 
-## Estilos CSS (Dark Mode)
+## ✍️ Autor
 
-Usa variables CSS (`:root`) para:
-
-* Colores de fondo, texto y tarjetas.
-* Colores primario y secundario.
-* Bordes y sombras.
-
-Componentes principales:
-
-* `.container`: contenedor principal con fondo oscuro y sombra.
-* `#datosUsuario`: formulario estilizado.
-* `.ejercicio-card`: tarjetas con detalles de cada ejercicio.
+TP desarrollado como parte del curso de JavaScript en [Coderhouse].
 
 ---
 
-## Contribuciones
-
-* Sugerencias para añadir más actividades.
-* Incluir imágenes o GIFs de referencia para cada ejercicio.
-* Mejorar validación de inputs (rango de peso, edad, etc.).
-
----
-
-## Autor
-
-**Zenon Zuliani**
-
-Proyecto entregable para la asignatura de JavaScript interactivo.
-
----
-
-© 2025 Zenon Zuliani. Todos los derechos reservados.

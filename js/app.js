@@ -116,7 +116,8 @@ function guardarRutina(rutina) {
 
 function renderizarHistorial() {
   const contenedor = document.getElementById("historial");
-  contenedor.innerHTML = "<h3>Historial de Rutinas</h3>";
+  contenedor.innerHTML = `<h3>Historial de Rutinas</h3>
+    <button id="btn-borrar-seleccionadas" class="btn-borrar">🗑️ Borrar rutinas seleccionadas del historial</button>`;
 
   if (historialRutinas.length === 0) {
     contenedor.innerHTML += "<p>No hay rutinas previas.</p>";
@@ -138,36 +139,16 @@ function renderizarHistorial() {
           </ul>
         </div>
         <div class="checkbox-ejercicio">
-          <input type="checkbox" data-fecha="${item.fecha}">
+          <input type="checkbox" class="checkbox-historial" data-fecha="${item.fecha}">
         </div>
       </div>
     `;
     contenedor.appendChild(div);
   });
-}
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleThemeBtn = document.getElementById("toggle-theme");
-  const borrarBtn = document.getElementById("btn-borrar-seleccionadas");
-  const prefersDark = localStorage.getItem("modoOscuro") === "true";
-
-  // Dark mode
-  if (prefersDark) {
-    document.body.classList.add("dark");
-    toggleThemeBtn.textContent = "☀️ Modo Claro";
-  }
-
-  toggleThemeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    const isDark = document.body.classList.contains("dark");
-    toggleThemeBtn.textContent = isDark ? "☀️ Modo Claro" : "🌙 Modo Oscuro";
-    localStorage.setItem("modoOscuro", isDark);
-  });
-
-  // Borrar rutinas seleccionadas
-  borrarBtn.addEventListener("click", () => {
-    const checkboxes = document.querySelectorAll(".checkbox-historial input[type='checkbox']");
+  // ⬇️ Agregar funcionalidad del botón aquí (porque el botón fue creado recién arriba)
+  document.getElementById("btn-borrar-seleccionadas").addEventListener("click", () => {
+    const checkboxes = document.querySelectorAll(".checkbox-historial");
     const seleccionados = [];
 
     checkboxes.forEach(cb => {
@@ -200,4 +181,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleThemeBtn = document.getElementById("toggle-theme");
+  const borrarBtn = document.getElementById("btn-borrar-seleccionadas");
+  const prefersDark = localStorage.getItem("modoOscuro") === "true";
+
+  // Dark mode
+  if (prefersDark) {
+    document.body.classList.add("dark");
+    toggleThemeBtn.textContent = "☀️ Modo Claro";
+  }
+
+  toggleThemeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
+    toggleThemeBtn.textContent = isDark ? "☀️ Modo Claro" : "🌙 Modo Oscuro";
+    localStorage.setItem("modoOscuro", isDark);
+  });
 });
+

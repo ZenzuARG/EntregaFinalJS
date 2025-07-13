@@ -58,6 +58,7 @@ button:hover {
 
 .rutina-item {
   background-color: #f1f1f1;
+  border-left: 5px solid #007bff;
   margin: 0.5rem 0;
   padding: 0.75rem 1rem;
   border-radius: 8px;
@@ -97,7 +98,7 @@ button:hover {
 }
 
 .btn-borrar {
-  background: #e63946;
+  background: #e63946!important;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;
@@ -108,7 +109,7 @@ button:hover {
   transition: background 0.3s;
 }
 .btn-borrar:hover {
-  background: #a82833;
+  background: #a82833!important;
 }
 
 
@@ -145,6 +146,7 @@ body.dark {
 
 .dark .rutina-item {
   background-color: #333;
+  border-left: 5px solid #90caf9;
 }
 
 .dark .rutina-item:hover {
