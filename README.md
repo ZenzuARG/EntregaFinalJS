@@ -38,6 +38,7 @@ El proyecto fue completamente rediseñado y optimizado. A continuación se lista
 
 ## 📁 Estructura del proyecto
 
+```
 📦 EntregaFinalJS
 ├── index.html → Página principal
 ├── css/
@@ -47,6 +48,7 @@ El proyecto fue completamente rediseñado y optimizado. A continuación se lista
 ├── assets/
 │ └── rutinas.json → Base de datos de ejercicios
 └── README.md → Este archivo
+```
 
 ---
 
@@ -59,18 +61,12 @@ El proyecto fue completamente rediseñado y optimizado. A continuación se lista
 
 ---
 
-## 💡 Mejoras posibles a futuro
+## Autor
 
-- Registro de usuario y autenticación
-- Exportar rutina como PDF o imprimir
-- Integración con APIs de salud o fitness
-- Calorías estimadas por rutina
+**Zenon Zuliani**
 
----
-
-## ✍️ Autor
-
-TP desarrollado como parte del curso de JavaScript en [Coderhouse].
+Proyecto entregable para la asignatura de JavaScript interactivo.
 
 ---
 
+© 2025 Zenon Zuliani. Todos los derechos reservados.
