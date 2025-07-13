@@ -1,0 +1,242 @@
+{
+  "Flexiones": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Apoyá las manos en el suelo al ancho de los hombros y realizá una flexión de brazos manteniendo el cuerpo recto.",
+    "baseReps": 15
+  },
+  "Fondos entre bancos": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Apoyá las manos en un banco detrás de ti y bajá el cuerpo flexionando los codos.",
+    "baseReps": 12
+  },
+  "Sentadillas con salto": {
+    "tipo": "reps",
+    "baseSeries": 4,
+    "descripcion": "Bajá en sentadilla y luego impulsate en un salto vertical.",
+    "baseReps": 11
+  },
+  "Planchas laterales": {
+    "tipo": "reps",
+    "baseSeries": 4,
+    "descripcion": "Apoyate de lado en el antebrazo y mantené el cuerpo en línea recta.",
+    "baseReps": 14
+  },
+  "Superman": {
+    "tipo": "reps",
+    "baseSeries": 3,
+    "descripcion": "Acostado boca abajo, levantá brazos y piernas al mismo tiempo.",
+    "baseReps": 9
+  },
+  "Abdominales bicicleta": {
+    "tipo": "reps",
+    "baseSeries": 3,
+    "descripcion": "Llevá el codo al contrario rodilla alternadamente mientras pedaleás en el aire.",
+    "baseReps": 8
+  },
+  "Zancadas laterales": {
+    "tipo": "reps",
+    "baseSeries": 3,
+    "descripcion": "Dá un paso lateral y bajá como en sentadilla solo con una pierna.",
+    "baseReps": 8
+  },
+  "Flexiones diamante": {
+    "tipo": "reps",
+    "baseSeries": 2,
+    "descripcion": "Colocá las manos juntas formando un diamante, apuntando al pecho.",
+    "baseReps": 10
+  },
+  "Planchas con palmada": {
+    "tipo": "reps",
+    "baseSeries": 2,
+    "descripcion": "En posición de plancha, alterná una palmada con cada mano frente al cuerpo.",
+    "baseReps": 8
+  },
+  "Elevaciones de piernas": {
+    "tipo": "reps",
+    "baseSeries": 3,
+    "descripcion": "Acostado boca arriba, elevá ambas piernas rectas hacia arriba.",
+    "baseReps": 8
+  },
+  "Sprint en bici": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Pedaleá lo más rápido posible durante el tiempo asignado.",
+    "baseTime": 52
+  },
+  "Subidas simuladas": {
+    "tipo": "time",
+    "baseSeries": 4,
+    "descripcion": "Aumentá la resistencia de la bici como si estuvieras subiendo una cuesta.",
+    "baseTime": 87
+  },
+  "Intervalos largos": {
+    "tipo": "time",
+    "baseSeries": 5,
+    "descripcion": "Alterná 2 minutos intensos con 2 minutos suaves por repetición.",
+    "baseTime": 41
+  },
+  "Pedaleo con una pierna": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Usá solo una pierna para pedalear, cambiando en cada serie.",
+    "baseTime": 87
+  },
+  "Cadencia constante": {
+    "tipo": "time",
+    "baseSeries": 4,
+    "descripcion": "Mantené una velocidad constante por todo el intervalo.",
+    "baseTime": 84
+  },
+  "Curl martillo": {
+    "tipo": "reps",
+    "baseSeries": 4,
+    "descripcion": "Sostené mancuernas con agarre neutro y flexioná los codos para trabajar los bíceps.",
+    "baseReps": 15
+  },
+  "Remo con mancuerna": {
+    "tipo": "reps",
+    "baseSeries": 2,
+    "descripcion": "Apoyá una rodilla y mano en un banco y remá con la otra mano.",
+    "baseReps": 14
+  },
+  "Peso muerto rumano": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Con barra o mancuernas, bajá con la espalda recta y subí contrayendo glúteos.",
+    "baseReps": 13
+  },
+  "Press inclinado": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Con barra o mancuernas, hacé press de pecho en banco inclinado.",
+    "baseReps": 14
+  },
+  "Elevaciones frontales": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Con mancuernas, levantá los brazos estirados al frente.",
+    "baseReps": 13
+  },
+  "Press con mancuernas": {
+    "tipo": "reps",
+    "baseSeries": 5,
+    "descripcion": "Empujá mancuernas desde los hombros hasta estirar completamente los brazos.",
+    "baseReps": 13
+  },
+  "Extensiones de tríceps": {
+    "tipo": "reps",
+    "baseSeries": 2,
+    "descripcion": "Con barra Z o mancuernas, extendé los brazos por encima de la cabeza.",
+    "baseReps": 15
+  },
+  "Remo en polea": {
+    "tipo": "reps",
+    "baseSeries": 4,
+    "descripcion": "Sentado en máquina, remá trayendo el agarre hacia el abdomen.",
+    "baseReps": 13
+  },
+  "Sentadilla goblet": {
+    "tipo": "reps",
+    "baseSeries": 3,
+    "descripcion": "Sostené una mancuerna frente al pecho mientras hacés sentadillas.",
+    "baseReps": 9
+  },
+  "Pull over": {
+    "tipo": "reps",
+    "baseSeries": 2,
+    "descripcion": "Acostado con una mancuerna, bajá los brazos hacia atrás estirando pecho y dorsales.",
+    "baseReps": 9
+  },
+  "Jump squats": {
+    "tipo": "time",
+    "baseSeries": 4,
+    "descripcion": "Hacé una sentadilla y saltá explosivamente hacia arriba.",
+    "baseTime": 80
+  },
+  "High knees": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Corré en el lugar levantando las rodillas a la altura de la cadera.",
+    "baseTime": 36
+  },
+  "Skaters": {
+    "tipo": "time",
+    "baseSeries": 4,
+    "descripcion": "Saltá de lado a lado como si patinaras.",
+    "baseTime": 88
+  },
+  "Burpees con salto": {
+    "tipo": "time",
+    "baseSeries": 3,
+    "descripcion": "Combiná sentadilla, plancha, flexión y salto vertical.",
+    "baseTime": 39
+  },
+  "Jumping lunges": {
+    "tipo": "time",
+    "baseSeries": 5,
+    "descripcion": "Alterná estocadas explosivas en el aire cambiando de pierna.",
+    "baseTime": 46
+  },
+  "Perro boca abajo": {
+    "tipo": "time",
+    "baseSeries": 3,
+    "descripcion": "Desde plancha, empujá la cadera hacia arriba formando una V invertida.",
+    "baseTime": 86
+  },
+  "Cobra": {
+    "tipo": "time",
+    "baseSeries": 3,
+    "descripcion": "Acostado boca abajo, empujá el pecho hacia arriba con los brazos.",
+    "baseTime": 47
+  },
+  "Torsión sentada": {
+    "tipo": "time",
+    "baseSeries": 5,
+    "descripcion": "Sentado, cruzá una pierna y girá el torso hacia ese lado.",
+    "baseTime": 55
+  },
+  "Guerrero I": {
+    "tipo": "time",
+    "baseSeries": 3,
+    "descripcion": "Estocada al frente con brazos levantados al cielo.",
+    "baseTime": 32
+  },
+  "Triángulo": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Piernas separadas, un brazo tocando el pie y el otro extendido al cielo.",
+    "baseTime": 37
+  },
+  "Correr 5 minutos": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Trote continuo en terreno plano a ritmo moderado.",
+    "baseTime": 68
+  },
+  "Trote con cambios de ritmo": {
+    "tipo": "time",
+    "baseSeries": 5,
+    "descripcion": "Intercalá 1 minuto rápido y 2 minutos lento.",
+    "baseTime": 86
+  },
+  "Cuestas cortas": {
+    "tipo": "time",
+    "baseSeries": 2,
+    "descripcion": "Corré 30 segundos en subida, bajá caminando.",
+    "baseTime": 73
+  },
+  "Sprints progresivos": {
+    "tipo": "time",
+    "baseSeries": 3,
+    "descripcion": "Aumentá la velocidad cada 10 segundos.",
+    "baseTime": 32
+  },
+  "Correr descalzo suave": {
+    "tipo": "time",
+    "baseSeries": 4,
+    "descripcion": "Corré a paso suave sobre césped para fortalecer tobillos.",
+    "baseTime": 39
+  }
+}

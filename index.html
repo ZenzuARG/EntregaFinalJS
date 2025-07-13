@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Rutina Diaria</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Generador de Rutina Diaria</h1>
+        <form id="datosUsuario">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" min="1" required>
+                
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" min="1" required>
+
+            <label for="edad">Edad (años):</label>
+            <input type="number" id="edad" name="edad" min="1" required>
+                
+            <label for="actividad">Tipo de actividad:</label>
+            <select id="actividad" name="actividad" required>
+                <option value="calistenia">Calistenia</option>
+                <option value="spinning">Spinning</option>
+                <option value="weightlifting">Levantamiento de Pesas</option>
+                <option value="hiit">HIIT</option>
+                <option value="yoga">Yoga</option>
+                <option value="running">Running</option>
+            </select>
+                
+            <button type="submit">Generar Rutina</button>
+            <button id="toggle-theme" type="button">🌙 Modo Oscuro</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <section id="rutina-generada" class="result-section"></section>
+        <button id="btn-borrar-seleccionadas" class="btn-borrar">🗑️ Borrar rutinas seleccionadas del historial</button>
+        <section id="historial" class="result-section"></section>
+    </div>
+
+</body>
+</html>

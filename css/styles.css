@@ -1,0 +1,157 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffffd0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result-section {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.rutina-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.rutina-item {
+  background-color: #f1f1f1;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.rutina-item:hover {
+  background-color: #e0e0e0;
+}
+
+.rutina-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.texto-ejercicio {
+  flex: 1;
+}
+
+.texto-ejercicio p {
+  margin: 0.3rem 0 0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.checkbox-ejercicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-ejercicio input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.btn-borrar {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+.btn-borrar:hover {
+  background: #a82833;
+}
+
+
+.historial-item {
+  background: #f1f1f1;
+  padding: 0.5rem 1rem;
+  border-left: 5px solid #007bff;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+/* Modo oscuro */
+body.dark {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: #f0f0f0;
+}
+
+.dark .container,
+.dark .result-section {
+  background-color: #3b3b3b;
+}
+
+.dark .result-section {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.dark input,
+.dark select,
+.dark button {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.dark .rutina-item {
+  background-color: #333;
+}
+
+.dark .rutina-item:hover {
+  background-color: #444;
+}
+
+.dark .historial-item {
+  background-color: #333;
+  border-left-color: #90caf9;
+}
